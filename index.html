@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>41 bytes PNG Image</title>
+</head>
+
+<style>
+  img,
+  .bk {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+  }
+  body {
+    background: #fff;
+  }
+
+  input {
+    width: 700px;
+  }
+</style>
+
+<body>
+  <h2>41 bytes PNG Image</h2>
+
+  <div style="display: flex; gap: 8px">
+    <img
+      src="./41bytes.png"
+    />
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAACklEQVQ="
+    />
+    <div
+      class="bk"
+      style="
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAACklEQVQ=);
+      "
+    ></div>
+  </div>
+
+  <p>
+    <input
+      type="text"
+      readonly
+      value="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAACklEQVQ="
+    />
+  </p>
+</body>
